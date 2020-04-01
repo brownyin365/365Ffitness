@@ -131,12 +131,12 @@ import 'vuejs-noty/dist/vuejs-noty.css'
                         location: this.location,
                     })
                     .then((response) =>{
-                        // console.log("Document successfully written!");
+                        // console.log("Document successfully written!"); // eslint-disable-line no-console
                         // this.$noty.show("Added Successfully!")
                         this.$noty.success("Successfully Registered ", response);
                     })
                     .catch((error) =>{
-                        console.error("Error writing document: ", error);
+                        console.error("Error writing document: ", error); // eslint-disable-line no-console
                     });
                     this.$router.replace('/');
                 })
@@ -159,7 +159,7 @@ import 'vuejs-noty/dist/vuejs-noty.css'
         var storageRef = fb.storage().ref('photos/' + file.name);
         storageRef.put(file);
 
-        console.log(e.target.files[0]);
+        console.log(e.target.files[0]); // eslint-disable-line no-console
       }
        
     }
