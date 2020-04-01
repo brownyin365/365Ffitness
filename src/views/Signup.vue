@@ -150,7 +150,6 @@ import 'vuejs-noty/dist/vuejs-noty.css'
                 } else {
                     alert(errorMessage);
                 }
-                console.log(error);
             });
       },
 
