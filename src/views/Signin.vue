@@ -98,7 +98,6 @@ export default {
                             } else {
                                 alert(errorMessage);
                             }
-                            console.log(error);
                     });
       },
      
