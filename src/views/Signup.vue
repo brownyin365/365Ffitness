@@ -141,7 +141,7 @@ import 'vuejs-noty/dist/vuejs-noty.css'
                     this.$router.replace('/');
                 })
               
-                .catch(function(error) {
+                .catch((error) =>{
                 // Handle Errors here.
                 var errorCode = error.code;
                 var errorMessage = error.message;
@@ -153,6 +153,14 @@ import 'vuejs-noty/dist/vuejs-noty.css'
                 
             });
       },
+      uploadPhoto(e) {
+        let file = e.target.files[0]
+
+        var storageRef = fb.storage().ref('photos/' + file.name);
+        storageRef.put(file);
+
+        console.log(e.target.files[0]);
+      }
        
     }
 
