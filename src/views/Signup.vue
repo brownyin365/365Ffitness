@@ -161,7 +161,7 @@ import 'vuejs-noty/dist/vuejs-noty.css'
 
         console.log(e.target.files[0]);
       }
-        
+       console.log(error);
     }
 
 }
