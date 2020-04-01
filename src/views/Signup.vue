@@ -150,6 +150,7 @@ import 'vuejs-noty/dist/vuejs-noty.css'
                 } else {
                     alert(errorMessage);
                 }
+                console.log(error);
             });
       },
 
@@ -161,7 +162,7 @@ import 'vuejs-noty/dist/vuejs-noty.css'
 
         console.log(e.target.files[0]);
       }
-       console.log(error);
+       
     }
 
 }
