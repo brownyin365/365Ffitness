@@ -1,5 +1,5 @@
 <template>
-  <iv class="home bg-white-900 h-screen w-full">
+  <iv class="home bg-white-900 h-screen w-screen">
      <div id="app" class="bg-white-900 h-screen w-full">
     <!-- <div class="container mx-auto px-20">
     </div>   -->
